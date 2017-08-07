@@ -40,6 +40,7 @@ Scanner in=new Scanner(System.in);
                 System.exit(ch);
         }
     System.out.println("entry created");
+   in.close();
     }
 
     void update() throws SQLException {
@@ -53,7 +54,7 @@ Scanner in=new Scanner(System.in);
                 update_staff();
                 break;
         }
-
+in.close();
     }
 
     void view() throws SQLException {
@@ -68,7 +69,7 @@ Scanner in=new Scanner(System.in);
                 break;
         }
 
-
+in.close();
     }
 
     private  void staff() throws SQLException {
